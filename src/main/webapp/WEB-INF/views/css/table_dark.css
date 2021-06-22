@@ -30,3 +30,17 @@
 .table_dark tr:hover td {
     text-decoration: underline;
 }
+
+button {
+    background-color: #252F48;
+    color: #CAD4D6;
+    padding: 3px 10px;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+.block1 {
+    margin-left: auto;
+    margin-right: auto;
+}

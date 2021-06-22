@@ -8,6 +8,7 @@
     <title>Manufacturers</title>
 </head>
 <body>
+<%@include file="/WEB-INF/views/header.jsp"%>
 <form method="post" id="manufacturer" action="${pageContext.request.contextPath}/manufacturers/add"></form>
 <h1 class="table_dark">Add manufacturer:</h1>
 <table border="1" class="table_dark">
@@ -27,6 +28,28 @@
             <input type="submit" name="add" form="manufacturer" required>
         </td>
     </tr>
+</table>
+<br>
+<table border="1" class="table_dark">
+    <h1 class="table_dark">All manufacturers:</h1>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Country</th>
+    </tr>
+    <c:forEach var="manufacturer" items="${manufacturers}">
+        <tr>
+            <td>
+                <c:out value="${manufacturer.id}"/>
+            </td>
+            <td>
+                <c:out value="${manufacturer.name}"/>
+            </td>
+            <td>
+                <c:out value="${manufacturer.country}"/>
+            </td>
+        </tr>
+    </c:forEach>
 </table>
 </body>
 </html>
