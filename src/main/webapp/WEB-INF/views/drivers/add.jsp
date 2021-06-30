@@ -37,5 +37,9 @@
         </td>
     </tr>
 </table>
+<br>
+<c:if test="${param.success eq 1}">
+    <div style="text-align: center; color: #252F48; font-size: large">Driver registered successfully!</div>
+</c:if>
 </body>
 </html>

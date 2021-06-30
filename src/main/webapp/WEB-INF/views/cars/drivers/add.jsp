@@ -17,6 +17,11 @@
         <th>Driver ID</th>
         <th>Add</th>
     </tr>
+    <br>
+    <c:if test="${param.success eq 1}">
+        <div style="text-align: center; color: #252F48; font-size: large">Driver added to car successfully!</div>
+    </c:if>
+    <br>
     <tr>
         <td>
             <input type="number" name="car_id" form="car" required>

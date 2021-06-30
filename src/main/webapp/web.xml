@@ -132,6 +132,15 @@
     <servlet-name>getMyCurrentCarsController</servlet-name>
     <url-pattern>/drivers/cars/current</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteCurrentDriverFromCarController</servlet-name>
+        <servlet-class>mate.controller.car.DeleteCurrentDriverFromCarController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteCurrentDriverFromCarController</servlet-name>
+        <url-pattern>/cars/drivers/delete</url-pattern>
+    </servlet-mapping>
 
     <filter>
         <filter-name>authenticationFilter</filter-name>

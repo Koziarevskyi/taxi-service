@@ -1,6 +1,6 @@
 .table_dark {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    width: 70%;
+    width: 50%;
     color: #CAD4D6;
     font-size: 40px;
     text-align: center;
@@ -38,9 +38,4 @@ button {
     border: none;
     cursor: pointer;
     width: auto;
-}
-
-.block1 {
-    margin-left: auto;
-    margin-right: auto;
 }
