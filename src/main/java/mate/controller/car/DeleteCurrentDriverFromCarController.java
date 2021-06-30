@@ -29,7 +29,6 @@ public class DeleteCurrentDriverFromCarController extends HttpServlet {
         long carId = Long.parseLong(req.getParameter(CAR_ID));
         Car car = carService.get(carId);
         carService.removeDriverFromCar(driver, car);
-        String contextPath = req.getContextPath();
-        resp.sendRedirect(contextPath + "/cars/current");
+        resp.sendRedirect("/drivers/cars/current");
     }
 }
