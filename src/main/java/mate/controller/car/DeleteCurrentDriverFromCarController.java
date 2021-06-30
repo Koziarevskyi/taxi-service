@@ -13,7 +13,7 @@ import mate.service.DriverService;
 
 public class DeleteCurrentDriverFromCarController extends HttpServlet {
     private static final String DRIVER_ID = "driver_id";
-    private static final String CAR_ID = "car_id";
+    private static final String CAR_ID = "id";
     private static final Injector injector = Injector.getInstance("mate");
     private final CarService carService = (CarService) injector
             .getInstance(CarService.class);
