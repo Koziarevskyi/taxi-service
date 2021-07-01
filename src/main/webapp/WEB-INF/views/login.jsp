@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1 class="table_dark">Login page</h1>
-    <h3 style="color:red">${errorMsg}</h3>
+    <h3 style="color:red; text-align: center">${errorMsg}</h3>
     <form method="post" style="text-align: center; margin: 0 auto" action="${pageContext.request.contextPath}/login">
         <label><b>Login</b></label>
         <input type="text" placeholder="Please enter your login" name="login" required>
