@@ -39,7 +39,7 @@
     <tr>
         <th>Car ID</th>
         <th>Car Model</th>
-        <th>Manufacturer ID</th>
+        <th>Manufacturer Name</th>
     </tr>
     <c:forEach var="car" items="${cars}">
         <tr>
@@ -50,7 +50,7 @@
                 <c:out value="${car.model}"/>
             </td>
             <td>
-                <c:out value="${car.manufacturer.id}"/>
+                <c:out value="${car.manufacturer.name}"/>
             </td>
         </tr>
     </c:forEach>
